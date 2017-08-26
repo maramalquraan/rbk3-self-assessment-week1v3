@@ -1,19 +1,13 @@
 // your code here
 
-function array(arr){
-	var array = arr;
 
-	return{
-		first: function ()
-		{
-			return array[0];
-		},
-
-		last: function ()
-		{
-			return array[array.length-1];
-		}
+class Array  {
+	constructor(first, last){
+		this.first= fisrt;
+		this.last=last;
 	}
 
 }
 
+//first >>> Array[0];
+//last >>> Array [Array.length-1]		
