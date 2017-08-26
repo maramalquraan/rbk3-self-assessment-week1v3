@@ -9,6 +9,13 @@ var makeHashTable = function() {
       },
 
       insert: function(key, value) {
+        //var previous = undefined ;
+        // I should insert key with a unique value 
+
+
+
+        _storage[previous]=value;
+
         //your code is here
         this._storage[hashFn(key, max)] = value;
     }
