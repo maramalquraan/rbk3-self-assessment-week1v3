@@ -9,6 +9,6 @@ var Stack = function() {
 			if (value ===this._storage[i])
 				return this._storage.splice(i);
 		}
-		      // write me
+		       // write me
     };
   };
