@@ -5,7 +5,10 @@ var Stack = function() {
       // write me
     };
     this.remove = function(value) {
-    	this._storage.pop(value);
-      // write me
+		for (var i = 0; i < this._storage.length; i++) {
+			if (value ===this._storage[i])
+				return this._storage.splice(i);
+		}
+		      // write me
     };
   };
