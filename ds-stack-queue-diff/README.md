@@ -5,10 +5,10 @@
 Please write your explanation below.
 
 Stack : 
-is a container of objects we can pop and push from top only.
-example: changing the first place on a line every 5 mins.
+Last in , First Out.
+example: "undo" option in text editors.
 
 
 Queue :
- we can insert an item into the back of the queue, and we can remove the front item. 
+First In, First Out.
 example :  a line of students in the food court. 

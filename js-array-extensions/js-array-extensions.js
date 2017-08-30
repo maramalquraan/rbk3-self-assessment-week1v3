@@ -1,13 +1,7 @@
-// your code here
-
-
-class Array  {
-	constructor(first, last){
-		this.first= fisrt;
-		this.last=last;
-	}
-
+Array.prototype.first=function () {
+	return this[0];
 }
 
-//first >>> Array[0];
-//last >>> Array [Array.length-1]		
+Array.prototype.last=function(){
+	return this[this.length-1];
+}

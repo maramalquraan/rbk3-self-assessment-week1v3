@@ -8,17 +8,28 @@ var makeHashTable = function() {
         return this._storage[hashFn(key, max)];
       },
 
-      insert: function(key, value) {
-        //var previous = undefined ;
-        // I should insert key with a unique value 
-
-
-
-        _storage[previous]=value;
-
-        //your code is here
-        this._storage[hashFn(key, max)] = value;
-    }
+      insert: function(key, value)
+      {
+       var box=this._storage.get(hashFn(key, value));
+       if(!box)
+       {
+        box=[[key, value]];
+       }
+       var check=false;
+       for (var i = 0; i < box.length; i++) {
+         var tuple = box[i];
+         if(tuple[0]===key)
+         {
+          check=true;
+          tuple[1]=value;
+          break;
+         }
+       }
+       if(!check)
+       {
+        box.push([key, value]);
+       }
+      }
   }
 };
 

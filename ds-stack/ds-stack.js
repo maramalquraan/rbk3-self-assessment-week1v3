@@ -1,14 +1,16 @@
-var Stack = function() {
+var Stack = function()
+{
     this._storage =[];
-    this.add = function(value){
-    	this._storage.push(value)
-      // write me
-    };
-    this.remove = function(value) {
-		for (var i = 0; i < this._storage.length; i++) {
-			if (value ===this._storage[i])
-				return this._storage.splice(i);
-		}
-		       // write me
-    };
-  };
+      this.add = function(value)
+      {
+      	return this._storage.push(value)
+      };
+
+      this.remove = function()
+      {
+      	var top=this._storage.length-1;
+  	    this._storage.pop();
+  	    return top;
+  		}
+      
+};
