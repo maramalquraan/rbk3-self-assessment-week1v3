@@ -10,10 +10,11 @@ var makeHashTable = function() {
 
       insert: function(key, value)
       {
-       var box=this._storage.get(hashFn(key, value));
+       var box=this._storage[hashFn(key, max)];
        if(!box)
        {
-        box=[[key, value]];
+        box=[];
+         this._storage.push(box);
        }
        var check=false;
        for (var i = 0; i < box.length; i++) {
